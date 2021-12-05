@@ -138,10 +138,7 @@ body {
         margin-bottom: 15px;
     }
     .hero-content {
-        margin: 41px 33px 55px 33px;
-    }
-    .hero-container {
-        height: unset;
+        margin: 41px 33px 0 33px;
     }
     .hero-image {
         left: 10px;
@@ -149,8 +146,11 @@ body {
     }
 }
 @media screen and (max-width: 567px) {
+    .hero-container{
+        min-height: 820px;
+    }
     .hero-image{
-        margin: auto !important;
+        margin: 0 auto !important;
         position: relative;
         top:0;
         left: 0;
@@ -313,6 +313,9 @@ body {
     font-weight: 400;
     line-height: 31.5px;
 }
+.info-list {
+    display: none;
+}
 
 @media screen and (max-width: 1400px) {
     .info-header{
@@ -368,15 +371,58 @@ body {
         font-size: 27px;
         margin-bottom: 24px;
     }
+    .info-container{
+        display: none !important;
+    }
+    .info-list {
+        display: inline-block;
+    }
+    .info-item img{
+        height: 335px;
+        max-width: 100%;
+    }
+    .info-item{
+        max-width: 100%;
+    }
     .info-box {
-        width: 230px;
-        height: 400px;
+        width: 100%;
+        height: 230px;
     }
     .info{
         margin: 48px 16px !important;
     }
+
+    .info .slick-dots {
+        margin: 0px auto !important;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 15px;
+        
+    }
+    .info .slick-dots button {
+        font-size: 0;
+        background-color: #dde0e4;
+        /* background-color: var(--dark-three); */
+        width: 15px;
+        height: 15px;
+        border-radius: 100rem;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+    .info .slick-dots .slick-active button {
+        background-color:var(--pink-one);
+    }
+   
 }
-@media screen and (max-width: 567px) {}
+@media screen and (max-width: 567px) {
+    .info-box {
+        height: 300px;
+    }
+}
 
 /* section why*/
 .why{
@@ -388,7 +434,7 @@ body {
     min-height: 72px;
 }
 .why-desc{
-    width: 644px;
+    max-width: 644px;
     height: 416px;
 }
 .why-text{
@@ -473,12 +519,10 @@ body {
 @media screen and (max-width: 768px) {
     .why{
         margin: 0px 16px !important;
+        min-height: 625px;
     }
     .why-desc {
         width: 100%;
-    }
-    .why-container {
-        height: 550px;
     }
     .why-title{
         margin-bottom: 9px;
@@ -491,6 +535,9 @@ body {
     .why-image{
         margin: 30px 0 !important;
     }
+    .why-image img{
+        max-width: 300px !important;
+    }
     .why-image .why-image__one {
         top: 0;
     }
@@ -498,7 +545,11 @@ body {
         top: 30px;
     }
 }
-@media screen and (max-width: 567px) {}
+@media screen and (max-width: 567px) {
+    .why{
+        min-height: 800px;
+    }
+}
 /* section customer*/
 .customer{
     margin-top: 150px;
@@ -525,7 +576,7 @@ body {
     font-weight: 500;
     font-size: 48px;
     line-height: 72px;
-    /* width: 410px; */
+    width: 70%;
     height: 144px;
     text-align: right;
 }
@@ -549,7 +600,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
     .customer {
-        height: 330px;
+        min-height: 330px;
         margin-top: 65px; 
     }
     .customer-title{
@@ -567,7 +618,7 @@ body {
 
 @media screen and (max-width: 992px) {
     .customer {
-        height: 340px;
+        min-height: 340px;
     }
     .customer-title {
         font-size: 25px;
@@ -580,19 +631,22 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
-    .customer {
-        margin: 350px 16px 0 16px;
-    }
     .ms-auto{
         margin-left: 0em !important;
     }
-    /* .customer-image {
-        top: 85px;
-        left: 50px;
-    } */
+    .customer-image img{
+        max-width: 300px !important;
+    }
+    .customer-title{
+        width: unset;
+    }
 }
     
-@media screen and (max-width: 567px) {}
+@media screen and (max-width: 567px) {
+    .customer {
+        min-height: 500px;
+    }
+}
 
 /* section experience*/
 .experience-container{
@@ -621,6 +675,12 @@ body {
     line-height: 24px !important;
     padding: 18px 16px 18px 52px!important;
 } 
+.experience-image{
+    margin: auto !important;
+    position: relative;
+    top:0;
+    left: 0;
+}
 .experience-image__one{
     width: 70%;
     position: relative;
@@ -649,7 +709,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
     .experience{
-        margin-top: 65px;
+        margin-top:30px;
     }
     .experience-title{
         font-size: 38px;
@@ -666,21 +726,45 @@ body {
         font-size: 27px;
         line-height: 40px;
     }
+    .btn{
+        font-size: 12px !important;
+    }
 }
 @media screen and (max-width: 768px) {
-    .experience {
-        margin-top: 340px;
+    .experience-container {
+      min-height: 450px !important;
+    }
+    .experience-image img{
+        max-width: 300px;
+    }
+    .experience-image{
+        margin: 0 auto !important;
     }
     .experience-content {
-        margin: 46px 16px;
+        margin: 46px 16px 0px 16px;
     }
     .experience-container {
         height: 100%;
         border-radius: 10px;
     }
+    .btn{
+        height: 40px;
+        line-height: 3px !important
+    }
    
 }
-@media screen and (max-width: 567px) {}
+@media screen and (max-width: 567px) {
+    .experience-container {
+        min-height: 700px !important;
+      }
+    .experience-image__one{
+        left: 40px;
+    }
+    .experience-image__two {
+        top: 28;
+        left: 50px;
+    }
+}
 /* footer*/
 .footer{
     margin-top: 67px;
@@ -746,32 +830,12 @@ body {
     .footer-map iframe{
         height: 250px;
     }
-    /* .btn {
-        width: 250px;
-        height: 65px;
-        line-height: unset !important;
-        padding: 10px 10px 5px 54px !important;
-    }
-   .btn {
-        width: 370px;
-        height: 45px;
-        line-height: 10px !important;
-        padding: 16px 16px 16px 50px!important;
-    } */
 }
 @media screen and (max-width: 768px) {
     .footer{
+        margin-top: 50px;
         text-align: center;
     }
-    /* .btn{
-        width: 216px !important; 
-        height: 34px !important;
-        border-radius: 8px !important;
-        font-weight: 500 !important;
-        font-size: 16px !important;
-        line-height: 24px !important;
-        padding: 18px 16px 18px 52px!important;
-    }   */
     .footer-map iframe{
         width: 90%;
         height: 300px;

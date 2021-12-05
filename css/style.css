@@ -45,8 +45,16 @@ body {
     }
 }
 @media screen and (max-width: 767px) {
-  
+    .shiru-container{
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    .bg-light-pink {
+        border-radius: unset;
+        height: 100%;
+    }
 }
+
 @media screen and (max-width: 567px) {}
 
 /* section hero*/
@@ -135,6 +143,18 @@ body {
         font-size: 27px;
         line-height: unset;
         height: unset;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .hero-content {
+        margin: 41px 33px 55px 33px;
+    }
+    .hero-container {
+        height: unset;
+    }
+    .hero-image {
+        left: 10px;
+        margin-bottom: 45px !important;
     }
 }
 @media screen and (max-width: 567px) {}
@@ -226,8 +246,18 @@ body {
         line-height: 30px;
     }
 }
+@media screen and (max-width: 768px) {
+    .highlight{
+        margin: 48px 16px !important;
+    }
+    .highlight-image {
+        position: relative;
+        top: 65px;
+        left: 28px;
+        margin-bottom: 150px;
+    }
+}
 @media screen and (max-width: 567px) {}
-@media screen and (max-width: 768px) {}
 
 /* section info*/
 
@@ -326,16 +356,17 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
-    .info-header{
-        width: 100%;
-    }
     .info-header {
-        font-size: 25px;
-        margin-bottom: 10px;
+        width: 100%;
+        font-size: 27px;
+        margin-bottom: 24px;
     }
     .info-box {
         width: 230px;
         height: 400px;
+    }
+    .info{
+        margin: 48px 16px !important;
     }
 }
 @media screen and (max-width: 567px) {}
@@ -433,16 +464,31 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+    .why{
+        margin: 0px 16px !important;
+    }
     .why-desc {
         width: 100%;
     }
     .why-container {
         height: 550px;
     }
+    .why-title{
+        margin-bottom: 9px;
+    }
     .customer-title {
         font-size: 25px;
         line-height: 35px;
         text-align: unset;
+    }
+    .why-image{
+        margin: 30px 0 !important;
+    }
+    .why-image .why-image__one {
+        top: 0;
+    }
+    .why-image .why-image__two {
+        top: 30px;
     }
 }
 @media screen and (max-width: 567px) {}
@@ -526,7 +572,19 @@ body {
         top: 70px;
     }
 }
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .customer {
+        margin: 350px 16px 0 16px;
+    }
+    .ms-auto{
+        margin-left: 0em !important;
+    }
+    .customer-image {
+        top: 85px;
+        left: 50px;
+    }
+}
+    
 @media screen and (max-width: 567px) {}
 
 /* section experience*/
@@ -601,14 +659,20 @@ body {
         font-size: 27px;
         line-height: 40px;
     }
-    .btn {
-        width: 370px;
-        height: 45px;
-        line-height: 10px !important;
-        padding: 16px 16px 16px 50px!important;
-    }
 }
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .experience {
+        margin-top: 340px;
+    }
+    .experience-content {
+        margin: 46px 16px;
+    }
+    .experience-container {
+        height: 100%;
+        border-radius: 10px;
+    }
+   
+}
 @media screen and (max-width: 567px) {}
 /* footer*/
 .footer{
@@ -678,12 +742,51 @@ body {
         width: 400px;
         height: 250px;
     }
-    .btn {
+    /* .btn {
         width: 250px;
         height: 65px;
         line-height: unset !important;
         padding: 10px 10px 5px 54px !important;
+    } */
+    .btn {
+        width: 370px;
+        height: 45px;
+        line-height: 10px !important;
+        padding: 16px 16px 16px 50px!important;
     }
 }
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 567px) {}
+@media screen and (max-width: 768px) {
+    .footer{
+        text-align: center;
+    }
+    /* .btn{
+        width: 216px !important;
+        height: 34px !important;
+        border-radius: 8px !important;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        padding: 18px 16px 18px 52px!important;
+    }  */
+    .footer-map iframe{
+        width: 500px;
+        height: 300px;
+        margin: 29px;
+    }
+    .footer-logo {
+        margin: auto;
+        width: 210px;
+        margin-top: 55px;
+        height: 44px;
+    }
+}
+@media screen and (max-width: 567px) {
+    .footer-map iframe{
+        width: 318px;
+        height:318px;
+        margin: 29px;
+    }
+    .footer-content{
+        padding: 16px;
+    }
+}

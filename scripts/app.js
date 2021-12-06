@@ -2,6 +2,8 @@
  $(document).ready(function() {
   // Optimalisation: Store the references outside the event handler:
   var $window = $(window);
+  var backToTop = $('.back-to-top');
+
   function checkWidth() {
       var windowsize = $window.width();
       if (windowsize <= 540) {
@@ -64,5 +66,18 @@
           objCss;
       }
       $(".info .slick-track").css(objCss);
+    });
+  // Back to top
+    $(window).scroll(function() {
+      if ($(window).scrollTop() > 300) {
+        backToTop.addClass('active');
+      } else {
+        backToTop.removeClass('active');
+      }
+    });
+
+    backToTop.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
     });
 });

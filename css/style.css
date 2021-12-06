@@ -32,14 +32,16 @@ body {
 
 /* header */
 .logo {
+    position: relative;
     max-width: 130px;
     height: 110px;
-    /* left: -40px; */
+    left: -3%;
 }
 @media screen and (max-width: 1200px) {
     .logo {
         max-width: 100px;
         height: 80px;
+        left: -3%;
     } 
 }
 @media screen and (max-width: 992px) {
@@ -153,12 +155,12 @@ body {
 }
 @media screen and (max-width: 567px) {
     .hero-container{
-        min-height: 820px;
+        min-height: 860px;
     }
     .hero-image{
         margin: 0 auto !important;
         position: relative;
-        top:0;
+        top: -35px;
         left: 0;
     }
     .hero-image img{
@@ -172,6 +174,9 @@ body {
         position: absolute;
         top: 0px;
         left: -20px;
+    }
+    .hero-text{
+        text-align: center;
     }
 }
 
@@ -235,6 +240,9 @@ body {
         font-size: 18px;
         line-height: unset;
     }
+    .highlight-image .highlight-image__two {
+        left: -9px;
+    }
 }
 @media screen and (max-width: 1200px) {
     .highlight{
@@ -248,6 +256,9 @@ body {
     .highlight-title{
         font-size: 24px;
         line-height: 32px;
+    }
+    .highlight-image .highlight-image__two {
+        top: -2px;
     }
 }
 @media screen and (max-width: 992px) {
@@ -263,7 +274,7 @@ body {
 }
 @media screen and (max-width: 768px) {
     .highlight{
-        margin: 48px 16px !important;
+        margin: 60px 16px !important;
     }
     .highlight-image {
         position: relative;
@@ -271,21 +282,28 @@ body {
         left: 28px;
         margin-bottom: 150px;
     }
+    .highlight-image .highlight-image__two {
+        top: 20px;
+    }
 }
 @media screen and (max-width: 567px) {
     .highlight-image {
         top: 10px;
         left: 10px;
-        margin-bottom: 60px;
+        margin: 50px auto;
     }
     .highlight-image .highlight-image__two {
         position: absolute;
-        top: -38px;
+        top: -50px;
         left: -33px;
         max-width: 110%;
     }
 }
-
+@media screen and (max-width: 420px) {
+    .highlight-image .highlight-image__two {
+        top: -20px;
+    }
+}
 /* section info*/
 
 .info{
@@ -405,6 +423,9 @@ body {
    
 }
 @media screen and (max-width: 567px) {
+    .info {
+        margin-top: 100px;
+    }
     .info-container{
         padding: 0 !important;
         width: 100% !important;
@@ -459,7 +480,17 @@ body {
         padding-bottom: 28px;
     }
 }
+@media screen and (max-width: 420px) {
+    .info-box {
+        height: 260px;
+    }   
+}
 
+@media screen and (max-width: 380px) {
+    .info-box {
+        height: 320px;
+    }   
+}
 /* section why*/
 .why{
     margin-top: 150px;
@@ -519,7 +550,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     .why{
-        margin-top: 65px;
+        margin-top: 120px;
     }
     .why-title{
         font-size: 38px;
@@ -552,7 +583,7 @@ body {
         left: 45px;
     }
     .why-image .why-image__two {
-        left: 60px;
+        left: 85px;
     }
     .why-container{
         height: 470px;
@@ -584,7 +615,10 @@ body {
 }
 @media screen and (max-width: 567px) {
     .why{
-        min-height: 820px;
+        min-height: 890px;
+    }
+    .why-image img {
+        max-width: 450px !important;
     }
 }
 
@@ -592,10 +626,16 @@ body {
     .why{
         min-height: 920px;
     }
+    .why-image .why-image__one {
+        left: 35px;
+    }
+    .why-image .why-image__two {
+        left: 75px;
+    }
 }
 /* section customer*/
 .customer{
-    margin-top: 150px;
+    margin-top: 200px;
 }
 .customer-image{
     margin: auto !important;
@@ -644,7 +684,7 @@ body {
 @media screen and (max-width: 1200px) {
     .customer {
         min-height: 330px;
-        margin-top: 65px; 
+        margin-top: 130px;
     }
     .customer-title{
         font-size: 38px;
@@ -685,7 +725,7 @@ body {
         max-width: 300px !important;
     }
     .customer-title {
-        font-size: 25px;
+        font-size: 27px;
         line-height: 35px;
         text-align: unset;
         width: unset;
@@ -695,6 +735,31 @@ body {
 @media screen and (max-width: 567px) {
     .customer {
         min-height: 500px;
+    }
+    .customer-order-0{
+        margin-bottom: 70px;
+    }
+    .customer-image img{
+        max-width: 450px !important;
+    }
+    .customer-image .customer-image__one {
+        width: 80%;
+        position: relative;
+        top: -90px;
+        left: 45px;
+    }
+    .customer-image .customer-image__two {
+        left: 105px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .customer-image .customer-image__one {
+        left: 30px;
+    }
+    .customer-image .customer-image__two {
+        left: 68px;
+        top: -85px;
     }
 }
 
@@ -740,7 +805,7 @@ body {
 .experience-image__one{
     width: 70%;
     position: relative;
-    top: 15px;
+    top: 0px;
     left: 100px;
 }
 .experience-image__two{
@@ -762,10 +827,16 @@ body {
     .experience-container {
         height: 450px;
     }
+    .experience-image__one {
+        top: 0px;
+    } 
+    .experience-image__two{
+        width: 65%;
+    }
 }
 @media screen and (max-width: 1200px) {
     .experience{
-        margin-top:30px;
+        margin-top: 80px;
     }
     .experience-title{
         font-size: 38px;
@@ -773,7 +844,7 @@ body {
     }
     .experience-content {
         margin-top: 60px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
 }
 
@@ -793,9 +864,6 @@ body {
     .experience-image img{
         max-width: 300px;
     }
-    .experience-image{
-        margin: 0 auto !important;
-    }
     .experience-content {
         margin: 46px 16px 0px 16px;
     }
@@ -805,28 +873,61 @@ body {
     }
     .btn{
         height: 40px;
-        line-height: 3px !important
+        line-height: 3px !important;
+        padding: 13px 16px 18px 16px!important;
+    }
+    .experience-image__one {
+        width: 80%;
+        left: 25px;
+    }
+    .experience-image__two {
+        left: 50px;
     }
    
 }
 @media screen and (max-width: 567px) {
     .experience {
-        margin-top: 70px;
+        margin-top: 180px;
     }
     .experience-container {
-        min-height: 700px !important;
+        min-height: 750px !important;
       }
+    .experience-image img {
+        max-width: 450px;
+    }
     .experience-image__one{
-        left: 40px;
+        width: 70%;
+        top: -30px;
+        left: 70px;
     }
     .experience-image__two {
-        top: 28;
-        left: 50px;
+        width: 65%;
+        top: 6px;
+        left: 99px;
     }
     .btn{
         padding: 13px 16px 18px 16px!important;
     }
 }
+@media screen and (max-width: 420px) {
+    .experience {
+        margin-top: 130px;
+    }
+    .experience-container {
+        min-height: 700px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .experience-image__one {
+        left: 50px;
+    }
+    .experience-image__two {
+        top: 0px;
+        left: 72px;
+    }
+}
+
 /* footer*/
 .footer{
     margin-top: 67px;
@@ -869,8 +970,7 @@ body {
     opacity: 1;
 }
 .back-to-top:hover {
-    opacity: 0.5;
-    transition: 0.5;
+    background-color: #f25f65d1;
     color: var(--light-one);
 }
 .back-to-top i {
@@ -915,7 +1015,6 @@ body {
 @media screen and (max-width: 768px) {
     .footer{
         margin-top: 50px;
-        text-align: center;
     }
     .footer-map iframe{
         width: 90%;
@@ -930,7 +1029,11 @@ body {
     .footer-content{
         margin: 0px;
     }
+    .footer-map {
+        padding: 0px 30px !important;
+    }
     .footer-map iframe{
+        width: 100%;
         height:318px;
     }
     .footer-content{
@@ -940,8 +1043,73 @@ body {
         font-size: 12px;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
     .footer-map iframe {
         height: 225px;
+    }
+    .hero-title{
+        font-size: 24px;
+    }
+    .hero-text{
+        font-size: 12px;
+    }
+    .highlight-title{
+        font-size: 21px;
+    }
+    .highlight-text{
+        font-size: 16px;
+    }
+    .info-header{
+        font-size: 24px;
+    }
+    .info-content{
+        font-size: 16px;
+    }
+    .info-desc{
+        font-size: 16px;
+    }
+    .info-title{
+        font-size: 21px;
+    }
+    .why-title{
+        font-size: 21px;
+    }
+    .why-text{
+        font-size: 16px;
+    }
+    .customer-title {
+        font-size: 21px;
+    }
+    .experience-title{
+        font-size: 24px;
+    }
+    .experience-text{
+        font-size: 16px;
+    }
+    .footer-text{
+        padding-bottom: 12px;
+        font-size: 12px;
+    }
+    .footer-content{
+        text-align: center;
+    }
+    .hero-container {
+        min-height: 730px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .hero-content {
+        margin: 41px 15px 0 15px;
+    }
+    .why {
+        min-height: 815px;
+    }
+    .info-box {
+        height: 330px;
+    }
+    .btn{
+        padding: 8px 17px 8px 16px!important;
+        line-height: 13px !important;
     }
 }

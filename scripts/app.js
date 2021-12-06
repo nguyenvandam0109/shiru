@@ -31,7 +31,6 @@
           });
           // Add class
           $(".highlight-container").addClass( "d-flex flex-column-reverse ");
-          // $(".footer-container").addClass( "d-flex flex-column-reverse ");
           $(".customer-order-0").addClass( "order-0");
           $(".customer-order-1").addClass( "order-1");
           // Add css

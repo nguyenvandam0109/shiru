@@ -624,7 +624,7 @@ body {
 
 @media screen and (max-width: 380px) {
     .why{
-        min-height: 920px;
+        min-height: 900px;
     }
     .why-image .why-image__one {
         left: 35px;
@@ -919,6 +919,9 @@ body {
 }
 
 @media screen and (max-width: 380px) {
+    .experience {
+        margin-top: 100px;
+    }
     .experience-image__one {
         left: 50px;
     }
@@ -1047,45 +1050,7 @@ body {
     .footer-map iframe {
         height: 225px;
     }
-    .hero-title{
-        font-size: 24px;
-    }
-    .hero-text{
-        font-size: 12px;
-    }
-    .highlight-title{
-        font-size: 21px;
-    }
-    .highlight-text{
-        font-size: 16px;
-    }
-    .info-header{
-        font-size: 24px;
-    }
-    .info-content{
-        font-size: 16px;
-    }
-    .info-desc{
-        font-size: 16px;
-    }
-    .info-title{
-        font-size: 21px;
-    }
-    .why-title{
-        font-size: 21px;
-    }
-    .why-text{
-        font-size: 16px;
-    }
-    .customer-title {
-        font-size: 21px;
-    }
-    .experience-title{
-        font-size: 24px;
-    }
-    .experience-text{
-        font-size: 16px;
-    }
+    
     .footer-text{
         padding-bottom: 12px;
         font-size: 12px;
@@ -1093,12 +1058,15 @@ body {
     .footer-content{
         text-align: center;
     }
-    .hero-container {
-        min-height: 730px;
-    }
+    /* .hero-container {
+        min-height: 800px;
+    } */
 }
 
 @media screen and (max-width: 320px){
+    .hero-container {
+        min-height: 800px
+    }
     .hero-content {
         margin: 41px 15px 0 15px;
     }
@@ -1111,5 +1079,72 @@ body {
     .btn{
         padding: 8px 17px 8px 16px!important;
         line-height: 13px !important;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .hero-container {
+        min-height: 640px;
+    }
+    .experience {
+        margin-top: 150px;
+    }
+    .hero-title{
+        font-size: 21px;
+    }
+    .hero-text{
+        font-size: 14px;
+    }
+    .highlight-title{
+        font-size: 18px;
+    }
+    .highlight-text{
+        font-size: 16px;
+    }
+    .highlight {
+        margin: 30px 16px 0px 16px !important;
+    }
+    .info-header{
+        font-size: 21px;
+        line-height: 33px;
+    }
+    .info-content{
+        font-size: 14px;
+    }
+    .info-desc{
+        font-size: 14px;
+    }
+    .info-title{
+        font-size: 18px;
+    }
+    .info-item img {
+        margin-top: 20px;
+    }
+    .why-title{
+        font-size: 18px;
+    }
+    .why-text{
+        font-size: 14px;
+    }
+    .why {
+        min-height: 720px;
+    }
+    .customer-title {
+        font-size: 18px;
+    }
+    .customer-text {
+        font-size: 14px;
+    }
+    .experience-title{
+        font-size: 18px;
+    }
+    .experience-text{
+        font-size: 14px;
+    }
+    .experience {
+        margin-top: 30px;
+    }
+    .experience-container {
+        min-height: 650px !important;
     }
 }

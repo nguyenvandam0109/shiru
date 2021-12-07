@@ -16,10 +16,10 @@
             prevArrow: ``,
             nextArrow: ``,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 3000,
             responsive: [
               {
-                breakpoint: 768,
+                breakpoint: 540,
                 settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1,
